@@ -1,0 +1,141 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #bde2e3, #aad9db);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Títulos */
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 20px;
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #8ca6a8;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4c8c93;
+    box-shadow: 0 0 4px rgba(76, 140, 147, 0.5);
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #5a7691;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #475a6e;
+    transform: scale(1.05);
+}
+
+/* Información del Pokémon */
+.pokemon-info {
+    margin-top: 25px;
+    display: none; /* Cambia a 'block' cuando se muestre la información */
+    text-align: center;
+}
+
+.pokemon-info img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-info h3 {
+    font-size: 24px;
+    color: #2d4f5b;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.pokemon-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Retroalimentación o alertas */
+#feedback {
+    font-size: 14px;
+    color: #ff4c4c;
+    margin-top: 10px;
+}
+
+/* Adaptabilidad para dispositivos móviles */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .pokemon-info img {
+        width: 100px;
+        height: 100px;
+    }
+}
