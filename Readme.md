@@ -16,4 +16,4 @@ Este es un buscador de Pokémon interactivo que permite buscar Pokémon por su n
 - [PokéAPI](https://pokeapi.co/): API utilizada para obtener datos de los Pokémon.
 
 ## Demo
-Puedes probarlo aquí: [https://tu_usuario.github.io/pokemon-search/](https://tu_usuario.github.io/pokemon-search/).
+Puedes probarlo aquí: (https://oumniya17.github.io/pokemon-search/).
